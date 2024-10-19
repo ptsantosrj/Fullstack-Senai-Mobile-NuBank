@@ -21,6 +21,24 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: '#000',
   },
+  servicesList: {
+    paddingVertical: 20,
+  },
+  serviceItem: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginHorizontal: 10,
+  },
+  iconContainer: {
+    backgroundColor: '#d3d3d3',
+    borderRadius: 50,
+    padding: 10,
+  },
+  serviceText: {
+    marginTop: 5,
+    color: '#fffff',
+    textAlign: 'center',
+  },
 });
  
   export default styles;
