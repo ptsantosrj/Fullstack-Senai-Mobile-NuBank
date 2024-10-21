@@ -6,7 +6,7 @@ export default function PixScreen({ route, navigation }) {
   const { handlePixTransfer } = route.params;
   const [amount, setAmount] = useState('');
   const [selectedPerson, setSelectedPerson] = useState(null);
-  const people = ['Patrick', 'Arthur', 'Bob Esponja', 'Diana'];
+  const people = ['Patrick', 'Arthur', 'Adriana', 'Diana'];
 
   const handleTransfer = () => {
     if (amount && selectedPerson) {
@@ -17,7 +17,7 @@ export default function PixScreen({ route, navigation }) {
 
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.label}>Escolha uma pessoa:</Text>
+      <Text style={styles.label}>Escolha um contato:</Text>
       <FlatList
         data={people}
         renderItem={({ item }) => (

@@ -1,24 +1,27 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet, Dimensions } from "react-native";
 
-const styles = StyleSheet.create({
+const width2 = Dimensions.get('window').width;
+
+const styles2 = StyleSheet.create({
   card: {
-    backgroundColor: '#fff',
-    borderRadius: 8,
-    padding: 20,
-    marginVertical: 10,
+    width2: width2 * 0.90, 
+    marginHorizontal: 20,
+    marginBottom: 20,
+    borderRadius: 10,
+    padding: 15, 
   },
   header: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 8,
   },
   icon: {
-    marginRight: 10,
+    marginRight: 8,
   },
   cardTitle: {
-    fontSize: 18,
+    fontSize: 12,
     fontWeight: 'bold',
   },
 });
 
-  export default styles;
+  export default styles2;
