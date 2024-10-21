@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, View, Text, StyleSheet } from 'react-native';
+import { ScrollView, View, Text } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import styles from '../styles/StyleNewsCard';
 import news from '../lists/news';
