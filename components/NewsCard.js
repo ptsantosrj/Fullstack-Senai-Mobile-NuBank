@@ -3,11 +3,34 @@ import { ScrollView, View, Text } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import styles from '../styles/StyleNewsCard';
 import news from '../lists/news';
+import { useRef, useEffect } from 'react';
 
 const NewsCard = () => {
+
+  const scrollViewRef = useRef(null);
+  const scrollInterval = 3000;
+  let scrollPosition = 0;
+  
+    useEffect(() => {
+      const totalNews = news.length;
+  
+      const interval = setInterval(() => {
+        if (scrollViewRef.current) {
+          scrollPosition += 1;
+          
+          if (scrollPosition >= totalNews) {
+            scrollPosition = 0;
+          }
+          scrollViewRef.current.scrollTo({ x: scrollPosition * 300, animated: true });
+        }
+      }, scrollInterval);
+  
+      return () => clearInterval(interval); 
+    }, []);
     
     return (
         <ScrollView
+          ref={scrollViewRef}
           horizontal
           pagingEnabled
           showsHorizontalScrollIndicator={false}
