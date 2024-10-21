@@ -38,10 +38,8 @@ export default function HomeScreen({ navigation }) {
         <Header />
 
         <View style={styles.content}>
-
-            <Text style={styles.sectionTitle}>Conta</Text> 
-            <Text style={styles.balance}>R$ {balance.toFixed(2)}</Text>
-         
+          <Text style={styles.sectionTitle}>Conta</Text> 
+          <Text style={styles.balance}>R$ {balance.toFixed(2)}</Text>
           <ServiceList services={servicesWithNavigation} navigation={navigation} />
           <Card title="Meus Cartões" backgroundColor= "#d3d3d3" icon="credit-card">
           </Card>

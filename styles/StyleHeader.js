@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
     },
     icon: {
       marginLeft: 20,
+      marginHorizontal: 20, //ver aqui pq nao consigo espacar os icones
     },
   });
 
