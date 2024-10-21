@@ -4,7 +4,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#d3d3d3',
-    paddingBottom: '200px'
+    paddingBottom: '200'
   },
   content: {
     flex: 1,
@@ -18,27 +18,17 @@ const styles = StyleSheet.create({
   scrollContainer: {
     flexGrow: 1,
   },
+  sectionTitle: {
+    fontSize: 15,
+    fontWeight: 'bold',
+    marginTop: 16, 
+    marginHorizontal: 20,
+    color: '#333',
+  },
   balance: {
-    fontSize: 24,
+    fontSize: 15,
     color: '#000',
-  },
-  servicesList: {
-    paddingVertical: 20,
-  },
-  serviceItem: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    marginHorizontal: 10,
-  },
-  iconContainer: {
-    backgroundColor: '#d3d3d3',
-    borderRadius: 50,
-    padding: 10,
-  },
-  serviceText: {
-    marginTop: 5,
-    color: '#fffff',
-    textAlign: 'center',
+    marginHorizontal: 20,
   },
 });
  

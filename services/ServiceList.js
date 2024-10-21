@@ -1,7 +1,7 @@
 import React from 'react';
 import { FlatList, TouchableOpacity, View, Text } from 'react-native';
 import { Feather } from '@expo/vector-icons';
-import styles from '../styles/StyleHomeScreen';
+import styles from '../styles/StyleServiceList';
 
 export default function ServiceList({ services, navigation }) {
 

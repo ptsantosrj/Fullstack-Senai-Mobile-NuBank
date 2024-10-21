@@ -14,6 +14,16 @@ const styles = StyleSheet.create({
     color: '#000',
   },
   message: {
+    marginTop: 5,
+    fontSize: 10,
+    color: '#000',
+  },
+  value: {
+    fontSize: 10,
+    color: '#000',
+  },
+  limitfree: {
+    marginTop: 5,
     fontSize: 10,
     color: '#000',
   },

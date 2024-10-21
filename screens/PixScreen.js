@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Button, TextInput, StyleSheet, FlatList, ScrollView, TouchableOpacity } from 'react-native';
+import { Text, Button, TextInput, FlatList, ScrollView, TouchableOpacity } from 'react-native';
 import styles from '../styles/StylePixScreen';
 
 export default function PixScreen({ route, navigation }) {
@@ -31,7 +31,7 @@ export default function PixScreen({ route, navigation }) {
       <TextInput
         style={styles.input}
         keyboardType="numeric"
-        placeholder="Digite o valor"
+        placeholder="Digite o valor a ser transferido"
         value={amount}
         onChangeText={setAmount}
       />

@@ -8,7 +8,7 @@ const styles2 = StyleSheet.create({
     marginHorizontal: 20,
     marginBottom: 20,
     borderRadius: 10,
-    padding: 15, 
+    padding: 5, 
   },
   header: {
     flexDirection: 'row',

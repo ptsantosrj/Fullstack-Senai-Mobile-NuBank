@@ -32,44 +32,35 @@ export default function HomeScreen({ navigation }) {
   });
 
   return (
-    <View style={styles.container}>
-      <ScrollView>
-      <section>
+    <ScrollView >
+      <View style={styles.container}>
+
         <Header />
-      </section>
 
-      <section>
         <View style={styles.content}>
-          <Card title="Conta">
+
+            <Text style={styles.sectionTitle}>Conta</Text> 
             <Text style={styles.balance}>R$ {balance.toFixed(2)}</Text>
-          </Card>
-
+         
           <ServiceList services={servicesWithNavigation} navigation={navigation} />
-
           <Card title="Meus Cartões" backgroundColor= "#d3d3d3" icon="credit-card">
           </Card>
-            
           <NewsCard news={news} />
-          
         </View>
-      </section>
-
-      <section>
-      <NoticeCard title="Próximo pagamento" message="Quarta-feira, 06 Nov" />
-      </section>
-
-      <section>
-      <NoticeCard title="Cartão de crédito" message="Fatura atual" />
-      </section>
-
-      <section>
-      <NoticeCard title="Empréstimos" message="valor disponível de até" />
-      </section>
-
-      <section>
-      <NoticeCard title="Descubra Mais" message="mais acoes" />
-      </section>
-      </ScrollView>
-    </View>
+        
+        <View>
+        <NoticeCard title="Próximo pagamento" message="Quarta-feira, 06 Nov" />
+        </View>
+        <View>
+        <NoticeCard title="Cartão de crédito" message="Fatura atual" value="R$ 2.000,00" limitfree="Limite disponível de R$ 500,00" />
+        </View>
+        <View>
+        <NoticeCard title="Empréstimos" message="valor disponível de até" value="R$ 30.000,00" />
+        </View>
+        <View>
+        <NoticeCard title="Descubra Mais" message="mais acoes" />
+        </View>
+      </View>
+    </ScrollView>
   );
 }
