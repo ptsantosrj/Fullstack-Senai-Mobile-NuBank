@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, Button, StyleSheet, ScrollView, FlatList, TouchableOpacity } from 'react-native';
+import { View, Text, Button, StyleSheet, ScrollView, FlatList, TouchableOpacity ,Dimensions } from 'react-native';
 import Header from '../components/Header';
 import Card from '../components/Card';
 import { Feather } from '@expo/vector-icons'
@@ -14,7 +14,7 @@ export default function HomeScreen({ navigation }) {
   };
 
   const services = [
-    { id: '1', name: 'Área Pix', icon: 'dollar-sign', action: () => navigation.navigate('Pix', { handlePixTransfer }) },
+    { id: '1', name: 'Área Pix', icon: 'dollar-sign', action: () => navigation.navigate('Área Pix', { handlePixTransfer }) },
     { id: '2', name: 'Pagar', icon: 'credit-card' },
     { id: '3', name: 'Empréstimo', icon: 'trending-up' },
     { id: '4', name: 'Transferir', icon: 'send' },
@@ -30,34 +30,35 @@ export default function HomeScreen({ navigation }) {
       <section>
         <Header />
       </section>
-      <View style={styles.content}>
-        <ScrollView contentContainerStyle={styles.scrollContainer}>
-          <Card title="Saldo">
-            <Text style={styles.balance}>R$ {balance.toFixed(2)}</Text>
-          </Card>
-          <FlatList
-            data={services}
-            horizontal
-            renderItem={({ item }) => (
-              <TouchableOpacity style={styles.serviceItem} onPress={item.action}>
-                <View style={styles.iconContainer}>
-                  <Feather name={item.icon} size={24} color="#8A05BE" />
-                </View>
-                <Text style={styles.serviceText}>{item.name}</Text>
-              </TouchableOpacity>
-            )}
-            keyExtractor={(item) => item.id}
-            showsHorizontalScrollIndicator={false}
-            contentContainerStyle={styles.servicesList}
-          />
-          <Card title="Cartões" backgroundColor="#d3d3d3" icon="credit-card">
-            <Text>Você ainda não adicionou cartões.</Text>
-          </Card>
-          <Card title="Carrossel Noticias" backgroundColor="#d3d3d3">
-
-          </Card>
-        </ScrollView>
-      </View>
+      <section>
+        <View style={styles.content}>
+          <ScrollView contentContainerStyle={styles.scrollContainer}>
+            <Card title="Conta">
+              <Text style={styles.balance}>R$ {balance.toFixed(2)}</Text>
+            </Card>
+            <FlatList
+              data={services}
+              horizontal
+              renderItem={({ item }) => (
+                <TouchableOpacity style={styles.serviceItem} onPress={item.action}>
+                  <View style={styles.iconContainer}>
+                    <Feather name={item.icon} size={24} color="#8A05BE" />
+                  </View>
+                  <Text style={styles.serviceText}>{item.name}</Text>
+                </TouchableOpacity>
+              )}
+              keyExtractor={(item) => item.id}
+              showsHorizontalScrollIndicator={false}
+              contentContainerStyle={styles.servicesList}
+            />
+            <Card title="Cartões" backgroundColor="#d3d3d3" icon="credit-card">
+              <Text>Você ainda não adicionou cartões.</Text>
+            </Card>
+            <Card title="Carrossel Noticias" backgroundColor="#d3d3d3">
+            </Card>
+          </ScrollView>
+        </View>
+      </section>
     </View>
   );
 }

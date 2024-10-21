@@ -4,15 +4,16 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#8A05BE',
+    paddingBottom: '200px'
   },
   content: {
     flex: 1,
     backgroundColor: '#fff',
-    borderTopLeftRadius: 25,
-    borderTopRightRadius: 25,
-    marginTop: -20,
-    paddingTop: 20,
-    paddingHorizontal: 20,
+    borderTopLeftRadius: 0,
+    borderTopRightRadius: 0,
+    marginTop: 0,
+    paddingTop: 0,
+    paddingHorizontal: 0,
   },
   scrollContainer: {
     flexGrow: 1,

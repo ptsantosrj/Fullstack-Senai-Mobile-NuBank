@@ -9,7 +9,7 @@ export default function AppNavigator() {
   return (
     <Stack.Navigator initialRouteName="Home">
       <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Pix" component={PixScreen} />
+      <Stack.Screen name="Área Pix" component={PixScreen} />
     </Stack.Navigator>
   );
 }

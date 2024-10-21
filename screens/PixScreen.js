@@ -6,7 +6,7 @@ export default function PixScreen({ route, navigation }) {
   const { handlePixTransfer } = route.params;
   const [amount, setAmount] = useState('');
   const [selectedPerson, setSelectedPerson] = useState(null);
-  const people = ['Alice', 'Bob', 'Charlie', 'Diana'];
+  const people = ['Patrick', 'Arthur', 'Bob Esponja', 'Diana'];
 
   const handleTransfer = () => {
     if (amount && selectedPerson) {
