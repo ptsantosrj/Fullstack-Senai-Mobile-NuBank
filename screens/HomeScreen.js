@@ -3,13 +3,12 @@ import { View, Text, ScrollView } from 'react-native';
 import Header from '../components/Header';
 import Card from '../components/Card';
 import NewsCard from '../components/NewsCard';
-import { Feather } from '@expo/vector-icons'
+//import { Feather } from '@expo/vector-icons'
 import styles from '../styles/StyleHomeScreen';
 import services from '../lists/Services';
 import news from '../lists/news';
 import NoticeCard from '../components/NoticeCard';
 import ServiceList from '../services/ServiceList';
-import { StatusBar } from 'expo-status-bar';
 
 export default function HomeScreen({ navigation }) {
 
@@ -31,11 +30,12 @@ export default function HomeScreen({ navigation }) {
       action: () => {} 
     };
   });
-
+  
   return (
-    <ScrollView >
-      <View style={styles.container}>
 
+    <ScrollView >
+
+      <View style={styles.container}>
         <Header />
 
         <View style={styles.content}>
