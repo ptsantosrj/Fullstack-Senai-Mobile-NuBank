@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, ScrollView } from 'react-native';
+import { View, Text, ScrollView, StatusBar } from 'react-native';
 import Header from '../components/Header';
 import Card from '../components/Card';
 import NewsCard from '../components/NewsCard';
@@ -34,6 +34,11 @@ export default function HomeScreen({ navigation }) {
   return (
 
     <ScrollView >
+
+      <StatusBar
+        backgroundColor="#8A05BE"
+        barStyle="light-content"
+      />
 
       <View style={styles.container}>
         <Header />

@@ -9,8 +9,8 @@ export default function AppNavigator() {
   return (
     
     <Stack.Navigator initialRouteName="Nubank">
-      <Stack.Screen name="Nubank" component={HomeScreen} />
-      <Stack.Screen name="Área Pix" component={PixScreen} />
+      <Stack.Screen name="Nubank" component={HomeScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Área Pix" component={PixScreen} options={{ headerShown: false }} />
     </Stack.Navigator>
   );
 }

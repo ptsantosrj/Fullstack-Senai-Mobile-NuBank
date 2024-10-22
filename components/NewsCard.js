@@ -4,8 +4,7 @@ import { Feather } from '@expo/vector-icons';
 import styles from '../styles/StyleNewsCard';
 import news from '../lists/news';
 import { useRef, useEffect } from 'react';
-import { FlatList } from 'react-native-web';
-import Animated from 'react-native-reanimated';
+import { FlatList } from 'react-native';
 
 const NewsCard = () => {
    
