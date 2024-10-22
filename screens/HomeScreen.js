@@ -9,6 +9,7 @@ import services from '../lists/Services';
 import news from '../lists/news';
 import NoticeCard from '../components/NoticeCard';
 import ServiceList from '../services/ServiceList';
+import { StatusBar } from 'expo-status-bar';
 
 export default function HomeScreen({ navigation }) {
 

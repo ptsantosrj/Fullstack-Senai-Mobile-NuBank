@@ -30,7 +30,7 @@ export default function PixScreen({ route, navigation }) {
       />
       <TextInput
         style={styles.input}
-        keyboardType="numeric"
+        keyboardType='numeric'
         placeholder="Digite o valor a ser transferido"
         value={amount}
         onChangeText={setAmount}
