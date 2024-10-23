@@ -9,6 +9,7 @@ import services from '../lists/Services';
 import news from '../lists/news';
 import NoticeCard from '../components/NoticeCard';
 import ServiceList from '../services/ServiceList';
+import AdvertisingCard from '../components/AdvertisingCard';
 
 export default function HomeScreen({ navigation }) {
 
@@ -61,9 +62,11 @@ export default function HomeScreen({ navigation }) {
         <View>
         <NoticeCard title="Empréstimos" message="valor disponível de até" value="R$ 30.000,00" />
         </View>
+        <Text style={styles.sectionAdvertising}>Descubra mais</Text>
         <View>
-        <NoticeCard title="Descubra Mais" message="mais acoes" />
+          <AdvertisingCard />
         </View>
+        <Text style={styles.sectionBotton}>Avalie esta tela</Text>
       </View>
     </ScrollView>
   );
